@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#151C1B">
+  <title>DCN·LINK | Intelligent File Transfer</title>
+  <link rel="stylesheet" href="abcd.css">
+</head>
+
+<body>
+
+<iframe
+    class="intro-frame"
+    id="introFrame"
+    src="intro.html"
+    title="DCN LINK opening animation">
+</iframe>
+<header class="site-header">
+  <div class="header-container">
+    <a href="#home" class="brand">
+      <span class="brand-icon">D</span>
+      <span class="brand-text">
+        <span class="brand-name">DCN<span class="accent">·</span>LINK</span>
+        <span class="brand-subtitle">INTELLIGENT FILE TRANSFER</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#transmit">Transfer</a>
+      <a class="nav-link" href="receiver.html">Inbox</a>
+      <a class="nav-link" href="sender.html">Sender</a>
+      <a class="nav-link" href="#how">How it works</a>
+      <a class="nav-link" href="#faq">FAQ</a>
+    </nav>
+
+    <a class="nav-cta" href="#get-started">
+      <span class="status-dot"></span> Get Started ↗
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="home-section" id="home">
+    <div class="hero-grid"></div>
+    <div class="hero-orb orb-one"></div>
+    <div class="hero-orb orb-two"></div>
+
+    <div class="home-content">
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        THE NEXT GENERATION OF FILE TRANSFER
+      </div>
+
+      <h1>
+        Your data.<br>
+        Your network.<br>
+        <span class="gradient-text">Your connection.</span>
+      </h1>
+
+      <p class="welcome-description">
+        Transfer text, images, videos and files through one seamless interface.
+        Connect devices, move data and manage every transfer with ease.
+      </p>
+
+      <div class="home-actions">
+        <a href="#transmit" class="primary-button">
+          Start transferring <span>↗</span>
+        </a>
+        <a href="#how" class="secondary-button">
+          <span class="play-icon">▶</span> Explore the system
+        </a>
+      </div>
+
+      <div class="hero-divider"></div>
+
+      <div class="home-features">
+        <article class="feature">
+          <div class="feature-icon">↗</div>
+          <div>
+            <h3>Multiple formats</h3>
+            <p>Text, images, video and files</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">⌁</div>
+          <div>
+            <h3>Network ready</h3>
+            <p>Exchange data across devices</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">▤</div>
+          <div>
+            <h3>Transfer history</h3>
+            <p>Organized data records</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- 3D NETWORK VISUAL -->
+    <div class="network-visual" aria-label="Animated network visualization">
+      <div class="network-scene">
+
+        <div class="network-orbit orbit-a">
+          <i class="orbit-node node-a"></i>
+          <i class="data-packet packet-a"></i>
+        </div>
+
+        <div class="network-orbit orbit-b">
+          <i class="orbit-node node-b"></i>
+          <i class="data-packet packet-b"></i>
+        </div>
+
+        <div class="network-orbit orbit-c">
+          <i class="orbit-node node-c"></i>
+          <i class="orbit-node node-d"></i>
+        </div>
+
+        <div class="network-core">
+          <div class="core-inner">
+            <span class="core-icon">D</span>
+            <span class="core-label">DATA CORE</span>
+            <span class="core-status">
+              <i></i> SYSTEM ACTIVE
+            </span>
+          </div>
+        </div>
+
+        <div class="network-label label-fso"><i></i> FSO</div>
+        <div class="network-label label-wifi"><i></i> Wi-Fi</div>
+        <div class="network-label label-mmwave"><i></i> mmWave</div>
+        <div class="network-label label-lora"><i></i> LoRa</div>
+
+      </div>
+
+      <div class="network-caption">
+        <span></span> INTELLIGENT CONNECTIVITY
+      </div>
+    </div>
+
+    <div class="hero-side-label">
+      <span></span> CONNECTED BY DESIGN
+    </div>
+
+    <div class="hero-bottom-label">
+      <i></i> TRANSFER INTERFACE <b>/</b> DCN·LINK v1.0
+    </div>
+  </section>
+
+
+
+  <!-- GET STARTED -->
+  <section class="get-started-section" id="get-started">
+    <div class="get-started-container">
+
+      <span class="section-kicker">READY TO GET STARTED?</span>
+
+      <h2>Send, or <em>receive.</em></h2>
+
+      <p>
+        Choose your role and start transferring data.
+        Sender and receiver applications can store and retrieve
+        information from the PostgreSQL database.
+      </p>
+
+      <div class="get-started-actions">
+        <a href="sender.html" class="start-button sender-button">
+          Open transmitter <span>↗</span>
+        </a>
+
+        <a href="receiver.html" class="start-button receiver-button">
+          Open receiver <span>↗</span>
+        </a>
+
+        <a href="#database" class="start-button database-button">
+          Open database <span>↗</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+   <!-- RECEIVER AND DATABASE -->
+  <section class="destination-section" id="receive">
+
+    <div class="destination-card">
+      <div class="destination-icon">↓</div>
+
+      <div>
+        <span class="section-kicker">RECEIVER NODE</span>
+        <h3>Ready to receive data?</h3>
+        <p>
+          Open your receiver interface to view incoming files and messages.
+        </p>
+      </div>
+
+      <a href="receiver.html" class="outline-link">
+        Open receiver ↗
+      </a>
+    </div>
+
+    <div class="destination-card" id="database">
+      <div class="destination-icon">▤</div>
+
+      <div>
+        <span class="section-kicker">DATA STORAGE</span>
+        <h3>Explore transfer records</h3>
+        <p>
+          Access the database dashboard to inspect stored messages
+          and transfer history.
+        </p>
+      </div>
+
+      <a href="database.html" class="outline-link">
+        Open database ↗
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- TRANSFER SECTION -->
+  <section class="transfer-section" id="transmit">
+    <div class="transfer-container">
+
+      <div class="section-heading centered">
+        <span class="section-kicker">DCN·LINK / FILE TRANSFER</span>
+        <h2>Transfer anything.<br><span>Anywhere.</span></h2>
+        <p>
+          Choose your content, configure the destination and select
+          the network interface for your transfer.
+        </p>
+      </div>
+
+      <div class="transfer-card">
+
+        <div class="card-topline">
+          <span class="live-indicator"></span>
+          TRANSFER CONSOLE
+          <span class="console-version">INTERFACE v1.0</span>
+        </div>
+
+        <div class="tabs" id="tabs">
+          <button type="button" class="tab on" data-k="file">Files</button>
+          <button type="button" class="tab" data-k="image">Images</button>
+          <button type="button" class="tab" data-k="video">Videos</button>
+          <button type="button" class="tab" data-k="text">Text</button>
+        </div>
+
+        <div class="channel-strip">
+          <span class="mode-pill" id="pill">FSO PRIMARY</span>
+
+          <span class="gain-label">
+            Channel gain <b id="hcv">0.60</b>
+          </span>
+
+          <input type="range" id="hc"
+            min="0.01" max="1" step="0.01"
+            value="0.6" aria-label="Simulate channel gain">
+        </div>
+
+        <input type="file" id="fileInput" multiple hidden>
+
+        <div class="drop-zone" id="drop"
+          role="button" tabindex="0"
+          aria-label="Choose files to transfer">
+
+          <div class="upload-symbol">↑</div>
+          <strong id="dropT">Click to choose files</strong>
+          <span id="dropDescription">or drag and drop them here</span>
+          <small id="dropFormats">
+            FILES · DOCUMENTS · ANY FILE TYPE
+          </small>
+        </div>
+
+        <div class="selected-files" id="selectedFiles"
+          aria-live="polite" hidden></div>
+
+        <div id="txt" class="text-message-box" hidden>
+          <label class="field-label" for="msg">YOUR MESSAGE</label>
+
+          <textarea id="msg" rows="5"
+            placeholder="Type your message here..."></textarea>
+
+          <div class="text-box-footer">
+            <span>Write your message and click Transfer.</span>
+            <span id="charCount">0 characters</span>
+          </div>
+        </div>
+
+        <div id="q" class="queue" style="display:none">
+          <div class="queue-heading">
+            <span id="qsum"></span>
+            <button type="button" id="clear">Clear all</button>
+          </div>
+          <div class="list" id="list"></div>
+        </div>
+
+        <div class="form-grid">
+          <div>
+            <label class="field-label" for="to">RECIPIENT NODE</label>
+            <input class="form-control" id="to"
+              placeholder="e.g. Node-B">
+          </div>
+
+          <div>
+            <label class="field-label" for="ifc">
+              TRANSFER INTERFACE
+            </label>
+
+            <select class="form-control" id="ifc">
+              <option value="auto">Auto · AI switch</option>
+              <option value="fso">FSO 1550 nm</option>
+              <option value="mm">mmWave</option>
+              <option value="wifi">Wi-Fi 6/7</option>
+              <option value="cell">4G / 5G / 6G</option>
+              <option value="lora">LoRa / LoRaWAN</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="transfer-options">
+          <label>
+            <input type="checkbox" checked id="store">
+            Store each sent message in the database
+          </label>
+
+          <label>
+            <input type="checkbox" checked id="showdb">
+            Show saved messages while sending
+          </label>
+        </div>
+
+        <div id="est" class="estimate"></div>
+        <div id="recent" class="recent"></div>
+
+        <div class="transfer-actions">
+          <button type="button"
+            class="protocol-button selected" id="tcp">TCP</button>
+
+          <button type="button"
+            class="protocol-button" id="udp">UDP</button>
+
+          <span class="action-spacer"></span>
+
+          <button type="button" class="send-button" id="send">
+            Transfer ↗
+          </button>
+        </div>
+
+        <div class="progress-track" id="prog">
+          <div id="bar"></div>
+        </div>
+
+        <div class="result-message" id="res" aria-live="polite"></div>
+
+        <p class="demo-note">
+          Text sends use ESP32 hardware confirmation. Other media and network modes are planned.
+        </p>
+
+      </div>
+
+      <div class="transfer-footer">
+        <span></span> Adaptive connectivity
+        <b>/</b> Intelligent network selection
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section" id="how">
+    <div class="section-wrap">
+
+      <div class="section-kicker">THE WORKFLOW</div>
+
+      <h2>
+        Three steps.<br>
+        <span>One connected experience.</span>
+      </h2>
+
+      <p class="section-intro">
+        A simple workflow for sending data between connected devices.
+      </p>
+
+      <div class="steps-grid">
+
+        <article class="step-card">
+          <div class="step-top">
+            <span class="step-number">01</span>
+            <span class="step-icon">↥</span>
+          </div>
+          <h3>Select your content</h3>
+          <p>
+            Choose files, images or videos, or switch to Text
+            and type a message to send.
+          </p>
+          <div class="step-tag">01 / SELECT</div>
+        </article>
+
+        <article class="step-card">
+          <div class="step-top">
+            <span class="step-number">02</span>
+            <span class="step-icon">⌘</span>
+          </div>
+          <h3>Configure the transfer</h3>
+          <p>
+            Enter the receiving node and choose Auto AI switch
+            or select a network interface.
+          </p>
+          <div class="step-tag">02 / CONFIGURE</div>
+        </article>
+
+        <article class="step-card">
+          <div class="step-top">
+            <span class="step-number">03</span>
+            <span class="step-icon">↗</span>
+          </div>
+          <h3>Send your data</h3>
+          <p>
+            Start the transfer and monitor its progress.
+            The backend handles the actual delivery.
+          </p>
+          <div class="step-tag">03 / TRANSMIT</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  
+
+ 
+
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section" id="faq">
+    <div class="faq-container">
+
+      <div class="section-kicker">NEED A LITTLE CLARITY?</div>
+
+      <h2>
+        Frequently asked <span>questions.</span>
+      </h2>
+
+      <p class="section-intro">
+        A few things you may want to know about DCN·LINK.
+      </p>
+
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary>What is DCN·LINK?<b>+</b></summary>
+          <p>
+            DCN·LINK is an intelligent file-transfer interface
+            designed to demonstrate data exchange between sender
+            and receiver nodes using different communication technologies.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What types of content can I transfer?<b>+</b></summary>
+          <p>
+            The interface supports text messages, images, videos
+            and general files. Actual transfer capability depends
+            on the connected backend and network implementation.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What does Auto · AI switch mean?<b>+</b></summary>
+          <p>
+            It represents the adaptive network-selection option.
+            Your backend decision logic should evaluate channel
+            conditions and select an available interface.
+            The front-end selection alone does not perform AI switching.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Which communication interfaces are represented?<b>+</b></summary>
+          <p>
+            The interface includes FSO, mmWave, Wi-Fi,
+            cellular networks and LoRa/LoRaWAN as selectable
+            communication options.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I store transfer information?<b>+</b></summary>
+          <p>
+            Yes. The interface includes database options intended
+            to connect with PostgreSQL for storing and retrieving
+            transfer records. Database operations require your
+            backend connection.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does the animation show a real network connection?<b>+</b></summary>
+          <p>
+            The animated network graphic is a visual representation.
+            Real connection status, transmission progress and
+            switching decisions must be supplied by the application backend.
+          </p>
+        </details>
+
+      </div>
+
+      <div class="faq-bottom">
+        <p>Have more questions about the system?</p>
+        <a href="#transmit">
+          Explore the transfer console <span>↗</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <a href="#home" class="brand">
+        <span class="brand-icon">D</span>
+        <span class="brand-text">
+          <span class="brand-name">DCN<span class="accent">·</span>LINK</span>
+          <span class="brand-subtitle">INTELLIGENT FILE TRANSFER</span>
+        </span>
+      </a>
+
+      <p>
+        A smarter interface for moving data between connected devices.
+        Built around connectivity, clarity and control.
+      </p>
+
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>EXPLORE</h3>
+      <a href="#home">Home</a>
+      <a href="#transmit">Transfer</a>
+      <a href="#receive">Receive</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>PLATFORM</h3>
+      <span class="footer-status"><i></i> Interface ready</span>
+      <p>Digital Communication Network</p>
+      <p>DCN·LINK v1.0</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 DCN·LINK. All rights reserved.</span>
+    <span>Built for better connections ♥</span>
+  </div>
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const intro = document.getElementById("introFrame");
+
+    if (!intro) return;
+
+    setTimeout(() => {
+        intro.classList.add("is-leaving");
+
+        setTimeout(() => {
+            intro.remove();
+        }, 600);
+
+    }, 2000);
+
+});
+
+// Mobile navigation
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+menuToggle.addEventListener("click", () => {
+  const open = mainNav.classList.toggle("nav-open");
+
+  menuToggle.classList.toggle("menu-open", open);
+  menuToggle.setAttribute("aria-expanded", String(open));
+});
+
+document.querySelectorAll(".nav-link").forEach(link => {
+  link.addEventListener("click", () => {
+
+    document.querySelectorAll(".nav-link").forEach(item => {
+      item.classList.remove("active");
+    });
+
+    link.classList.add("active");
+    mainNav.classList.remove("nav-open");
+    menuToggle.classList.remove("menu-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+
+  });
+});
+
+
+// File transfer interface
+const fileInput = document.getElementById("fileInput");
+const drop = document.getElementById("drop");
+const dropTitle = document.getElementById("dropT");
+const dropDescription = document.getElementById("dropDescription");
+const dropFormats = document.getElementById("dropFormats");
+
+const textBox = document.getElementById("txt");
+const messageBox = document.getElementById("msg");
+const selectedFilesBox = document.getElementById("selectedFiles");
+const charCount = document.getElementById("charCount");
+
+const tabs = document.querySelectorAll("#tabs .tab");
+
+let selectedType = "file";
+let selectedFiles = [];
+
+
+// File size formatter
+function formatFileSize(bytes) {
+
+  if (bytes < 1024) {
+    return bytes + " B";
+  }
+
+  if (bytes < 1048576) {
+    return (bytes / 1024).toFixed(1) + " KB";
+  }
+
+  if (bytes < 1073741824) {
+    return (bytes / 1048576).toFixed(1) + " MB";
+  }
+
+  return (bytes / 1073741824).toFixed(2) + " GB";
+}
+
+
+// Display selected files
+function showSelectedFiles(files) {
+
+  selectedFiles = Array.from(files);
+
+  selectedFilesBox.replaceChildren();
+  selectedFilesBox.hidden = selectedFiles.length === 0;
+
+  dropTitle.textContent =
+    selectedFiles.length === 1
+      ? selectedFiles[0].name
+      : selectedFiles.length + " files selected";
+
+  selectedFiles.forEach(file => {
+
+    const row = document.createElement("div");
+    row.className = "selected-file-item";
+
+    const name = document.createElement("span");
+    name.textContent = file.name;
+
+    const size = document.createElement("small");
+    size.textContent = formatFileSize(file.size);
+
+    row.append(name, size);
+    selectedFilesBox.appendChild(row);
+
+  });
+}
+
+
+// Content type tabs
+tabs.forEach(tab => {
+
+  tab.addEventListener("click", () => {
+
+    selectedType = tab.dataset.k;
+
+    tabs.forEach(item => item.classList.remove("on"));
+    tab.classList.add("on");
+
+    if (selectedType === "text") {
+
+      drop.hidden = true;
+      selectedFilesBox.hidden = true;
+      textBox.hidden = false;
+
+      selectedFiles = [];
+      fileInput.value = "";
+
+      messageBox.focus();
+
+    } else {
+
+      textBox.hidden = true;
+      drop.hidden = false;
+
+      const accepts = {
+        image: "image/*",
+        video: "video/*",
+        file: ""
+      };
+
+      if (accepts[selectedType]) {
+        fileInput.setAttribute("accept", accepts[selectedType]);
+      } else {
+        fileInput.removeAttribute("accept");
+      }
+
+      dropTitle.textContent =
+        selectedType === "image"
+          ? "Click to choose images"
+          : selectedType === "video"
+          ? "Click to choose videos"
+          : "Click to choose files";
+
+      dropFormats.textContent =
+        selectedType === "image"
+          ? "JPG · PNG · GIF · WEBP"
+          : selectedType === "video"
+          ? "MP4 · WEBM · MOV · VIDEO FILES"
+          : "FILES · DOCUMENTS · ANY FILE TYPE";
+
+      selectedFilesBox.hidden = selectedFiles.length === 0;
+
+    }
+
+  });
+
+});
+
+
+// File selection
+drop.addEventListener("click", () => {
+  fileInput.click();
+});
+
+drop.addEventListener("keydown", event => {
+
+  if (event.key === "Enter" || event.key === " ") {
+
+    event.preventDefault();
+    fileInput.click();
+
+  }
+
+});
+
+fileInput.addEventListener("change", () => {
+  showSelectedFiles(fileInput.files);
+});
+
+
+// Drag and drop
+drop.addEventListener("dragover", event => {
+
+  event.preventDefault();
+  drop.classList.add("drag-over");
+
+});
+
+drop.addEventListener("dragleave", () => {
+  drop.classList.remove("drag-over");
+});
+
+drop.addEventListener("drop", event => {
+
+  event.preventDefault();
+  drop.classList.remove("drag-over");
+
+  const files = Array.from(event.dataTransfer.files);
+
+  if (!files.length) return;
+
+  if (
+    selectedType === "image" &&
+    files.some(file => !file.type.startsWith("image/"))
+  ) {
+    alert("Please drop image files only.");
+    return;
+  }
+
+  if (
+    selectedType === "video" &&
+    files.some(file => !file.type.startsWith("video/"))
+  ) {
+    alert("Please drop video files only.");
+    return;
+  }
+
+  showSelectedFiles(files);
+
+  try {
+
+    const transfer = new DataTransfer();
+
+    files.forEach(file => {
+      transfer.items.add(file);
+    });
+
+    fileInput.files = transfer.files;
+
+  } catch (_) {}
+
+});
+
+
+// Character counter
+messageBox.addEventListener("input", () => {
+
+  const count = messageBox.value.length;
+
+  charCount.textContent =
+    count + " character" + (count === 1 ? "" : "s");
+
+});
+
+
+// Channel gain slider
+const channelGain = document.getElementById("hc");
+
+channelGain.addEventListener("input", () => {
+
+  document.getElementById("hcv").textContent =
+    Number(channelGain.value).toFixed(2);
+
+});
+
+
+// TCP and UDP selection
+document.getElementById("tcp").addEventListener("click", () => {
+
+  document.getElementById("tcp").classList.add("selected");
+  document.getElementById("udp").classList.remove("selected");
+
+});
+
+document.getElementById("udp").addEventListener("click", () => {
+
+  document.getElementById("udp").classList.add("selected");
+  document.getElementById("tcp").classList.remove("selected");
+
+});
+
+
+// Route homepage text entry into the real hardware sender page.
+// This page is an overview; hardware messaging is handled by sender.html.
+document.getElementById("send").addEventListener("click", () => {
+  const result = document.getElementById("res");
+  if (selectedType !== "text") {
+    result.textContent = "Images, videos and files are coming soon. Choose Text for now.";
+    return;
+  }
+  const message = messageBox.value.trim();
+  if (!message) {
+    result.textContent = "Type your message first.";
+    messageBox.focus();
+    return;
+  }
+  sessionStorage.setItem("dcn-link-draft", message);
+  window.location.assign("sender.html");
+});
+
+</script>
+
+</body>
+</html>

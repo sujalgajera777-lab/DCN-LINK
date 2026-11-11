@@ -1,0 +1,23 @@
+DCN LINK — SAME PROJECT ON BOTH PCS — BOTH CAN SEND AND RECEIVE
+
+1. Extract this whole ZIP. Copy EXACTLY the same folder to D:\DCN-LINK\ on EACH PC.
+2. Both ESP32s get the SAME firmware: firmware\DCN_Transceiver\DCN_Transceiver.ino.
+   Keep DCNProtocol.h in the same folder; install ArduinoJson 7.x and ESP32 core 3.x.
+3. On EACH PC in CMD:
+   cd /d D:\DCN-LINK
+   On YOUR database PC: copy config\YOUR_PC_HUB.env.example .env
+   On OTHER PC: copy config\OTHER_PC_PEER.env.example .env
+   notepad .env
+   npm install
+4. YOUR PC with PostgreSQL: MODE=HUB, NODE_ID=NODE_A, DB settings as existing.
+   Other PC: MODE=PEER, NODE_ID=NODE_B, HUB_URL=http://YOUR_PC_WIFI_IP:3000.
+   Same MESSAGE_SEND_CODE, MESSAGE_VIEW_CODE and GATEWAY_KEY on both PCs.
+   Different NODE_ID; ESP_PORT is actual LOCAL COM port.
+5. Run sql\01_setup.sql ONCE on your PC's iot_db; not on the other PC.
+6. Start with 'node index.js' on YOUR PC first, then the other PC.
+7. On EITHER PC open http://localhost:3000/sender.html and /receiver.html.
+
+Messages go through ESP-NOW in either direction, then to YOUR central PostgreSQL.
+This release supports TEXT (160 UTF-8 bytes) only. Do not send sensitive text.
+
+Full steps and troubleshooting: README.md

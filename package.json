@@ -1,0 +1,17 @@
+{
+  "name": "dcn-link-unified",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Identical two-way ESP-NOW gateway, web app, optional central PostgreSQL hub",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check hardware-messages.js && node --check public/transmitter.js && node --check public/receiver.js && node tests/check-protocol.js",
+    "simulate": "node tests/simulate-two-way.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "serialport": "^13.0.0"
+  }
+}

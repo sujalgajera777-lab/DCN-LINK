@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCN·LINK | Receiver</title>
+  <link rel="stylesheet" href="transfer.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">DCN<span>·</span>LINK</div>
+    <nav>
+      <a href="abc.html">Home</a>
+      <a href="sender.html">Transmitter</a>
+      <a class="active" href="receiver.html">Receiver</a>
+    </nav>
+    <div class="connection-status"><span class="status-dot"></span> Receiver Mode</div>
+  </header>
+  <main class="main-container">
+    <section class="page-heading">
+      <p class="section-label">DCN·LINK / RECEIVED DATA</p>
+      <h1>Incoming <span>Messages.</span></h1>
+      <p class="page-description">Shows messages actually received over ESP-NOW by either board and saved to the central PostgreSQL database.</p>
+    </section>
+    <div class="receiver-layout">
+      <section class="transfer-card">
+        <div class="card-heading"><div><h2>Inbox Access</h2><p>Private view code for the receiver.</p></div><span class="step-number">01</span></div>
+        <div class="form-group">
+          <label for="viewCode">Inbox Access Code</label>
+          <input id="viewCode" type="password" autocomplete="off" placeholder="Enter inbox view code">
+          <small>Use the MESSAGE_VIEW_CODE assigned by the server owner.</small>
+        </div>
+        <button type="button" id="refreshInbox" class="send-button">Refresh Inbox</button>
+        <p id="inboxFeedback" class="page-description" role="status" aria-live="polite"></p>
+      </section>
+
+
+
+<section class="transfer-card">
+
+    <div class="card-heading">
+        <div>
+            <h2>Incoming Transfers</h2>
+            <p>Text messages received wirelessly by either ESP32, stored on the central database PC.</p>
+        </div>
+
+        <span class="step-number">01</span>
+    </div>
+
+    <div class="receiver-ip-box">
+
+        <h3>Hardware Receiver</h3>
+
+        <p id="receiverAddress">This PC · ESP-NOW · Shared inbox</p>
+
+        <small id="serverStatus">Checking connection...</small>
+
+    </div>
+
+    <div class="selected-files">
+
+        <div class="selected-heading">
+            <h3>Received Messages</h3>
+        </div>
+
+        <div class="incoming-list" id="incomingList">
+
+            <p class="empty-message">
+                Enter your inbox code to load received text messages...
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    </div>
+  </main>
+  <footer class="footer"><p>© 2026 DCN·LINK | Intelligent Data Transfer System</p></footer>
+  <script src="receiver.js"></script>
+</body>
+</html>
